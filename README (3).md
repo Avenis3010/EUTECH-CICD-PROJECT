@@ -63,7 +63,37 @@ Push the image to DockerHub
  docker login -u dockerHub_Username
  docker push {dockerHub_Username}/{image_name}
 ```
-Create a Jenkinsfile
+# Store credentials in jenkins
+## Go to Manage Jenkins --> credentials and add DockerHub and EC2-SSH-KEY credentials
+
+![image](https://github.com/user-attachments/assets/e76e2970-972e-46e2-b34a-a4238fd8ee55)
+
+![image](https://github.com/user-attachments/assets/032c2674-f3c3-4e49-a83e-d6763d74fc35)
+
+Go to Jenkins dashboard --> click on New Item --> Give a name to project --> select pipeline --> create 
+
+![image](https://github.com/user-attachments/assets/e850cd82-93b6-46d0-a764-cd412d83d3b4)
+
+![image](https://github.com/user-attachments/assets/a1e70ff4-c607-4462-ad66-9f183c5f7617)
+
+### click on build now
+
+![image](https://github.com/user-attachments/assets/a6f6ad67-a3d1-458c-98e9-60cd1172e2fa)
+
+### you can see our application will be running on port 80, access it using your public ip on broswer using
+
+ http://{Public-ip}:80 
+
+ ### we have created simple flask-app so it will look like
+
+ ![image](https://github.com/user-attachments/assets/848d85a3-cb8f-4e4f-ab03-d5ca33aaee1b)
+
+
+ 
+
+
+
+
 
 
 
